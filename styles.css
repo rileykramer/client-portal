@@ -352,3 +352,94 @@ h3 { font-size: 1.35rem; }
     grid-template-columns: 1fr;
   }
 }
+
+/* Dark theme overrides for luxury homepage */
+:root {
+  --bg: #0d0908;
+  --panel: rgba(255,255,255,0.06);
+  --panel-strong: rgba(255,255,255,0.12);
+  --text: #eee6dd;
+  --muted: #a8998c;
+  --line: rgba(255,255,255,0.1);
+  --accent: #b08a6e;
+  --shadow: 0 24px 70px rgba(0,0,0,0.4);
+  --success: #4da88a;
+  --warning: #c09571;
+  --danger: #d16a5e;
+}
+
+/* Override background to dark gradient */
+html, body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Chip navigation styles */
+.chip-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* Luxury hero styles */
+.hero--luxury {
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+
+.hero--luxury .hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 1.1;
+  max-width: 16ch;
+  margin: 0 auto 1.2rem;
+}
+
+.hero--luxury .hero-desc {
+  font-size: 1.2rem;
+  color: var(--muted);
+  max-width: 50ch;
+  margin: 0 auto 2rem;
+}
+
+/* Preview section styles */
+.preview {
+  padding: 4rem 0;
+}
+
+.preview .preview-content {
+  max-width: 32rem;
+}
+
+.preview-window {
+  position: relative;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  min-height: 22rem;
+}
+
+.preview-window .window-top {
+  height: 2.5rem;
+  background: rgba(255,255,255,0.1);
+  border-bottom: 1px solid var(--line);
+}
+
+.preview-window .window-body {
+  flex: 1;
+  background: rgba(255,255,255,0.02);
+  min-height: 19.5rem;
+}
