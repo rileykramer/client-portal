@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="portal-shell" data-auth-required="true">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-mark.svg" alt="Portal logo" />
+        <span class="brand__label">
+          <span class="brand__eyebrow">Private portal</span>
+          <span class="brand__name">Kramer Creative</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="help.html">Help</a>
+        <a href="login.html">Login</a>
+        <button type="button" class="js-logout">Log out</button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="toast" class="status hidden" style="position:fixed;right:1rem;bottom:1rem;z-index:999;"></div>
+
+  <main class="page">
+    <section class="section">
+      <div class="container split">
+        <div class="panel">
+          <span class="eyebrow">Welcome back</span>
+          <h1 style="font-size:clamp(2.3rem,4.5vw,4.2rem);max-width:14ch;">Hello, <span data-user-name>there</span>.</h1>
+          <p class="lead">Everything you need for your project is right here in one simple place.</p>
+
+          <div class="kpis">
+            <div class="kpi"><strong data-project-status>In progress</strong><span>project status</span></div>
+            <div class="kpi"><strong data-launch-date>To be scheduled</strong><span>target launch</span></div>
+            <div class="kpi"><strong>Simple</strong><span>clear next steps</span></div>
+            <div class="kpi"><strong>Private</strong><span>client-only access</span></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <span class="eyebrow">Project</span>
+          <h2 data-project-name>Your client portal</h2>
+          <div class="grid grid--2">
+            <a class="card" href="start-here.html"><h3>Start here</h3><p>Upload assets and share the basics.</p></a>
+            <a class="card" href="accounts.html"><h3>Set up accounts</h3><p>Create Shopify and Printful.</p></a>
+            <a class="card" href="uploads.html"><h3>Upload files</h3><p>Send logos, images, and docs.</p></a>
+            <a class="card" href="timeline.html"><h3>Timeline</h3><p>See what happens next.</p></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid--2">
+        <div class="panel">
+          <span class="eyebrow">Your current tasks</span>
+          <ul class="list" id="dashboard-tasks"></ul>
+        </div>
+        <div class="panel">
+          <span class="eyebrow">Recent updates</span>
+          <ul class="list" id="project-messages"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Designed to feel calm, clear, and easy to use.</p>
+    </div>
+  </footer>
+
+  <script src="assets/config.js"></script>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

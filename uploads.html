@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Uploads</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="portal-shell" data-auth-required="true">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-mark.svg" alt="Portal logo" />
+        <span class="brand__label">
+          <span class="brand__eyebrow">Private portal</span>
+          <span class="brand__name">Kramer Creative</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="help.html">Help</a>
+        <a href="login.html">Login</a>
+        <button type="button" class="js-logout">Log out</button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="toast" class="status hidden" style="position:fixed;right:1rem;bottom:1rem;z-index:999;"></div>
+
+  <main class="page">
+    <section class="section">
+      <div class="container grid grid--2">
+        <div class="panel">
+          <span class="eyebrow">Uploads</span>
+          <h1>Upload your files.</h1>
+
+          <form id="upload-form">
+            <div class="form-row">
+              <label class="label" for="upload-file">Choose file</label>
+              <input class="input" id="upload-file" type="file" required />
+            </div>
+
+            <div class="form-row">
+              <label class="label" for="upload-category">Category</label>
+              <select class="select" id="upload-category">
+                <option value="logos">Logos</option>
+                <option value="photos">Photos</option>
+                <option value="documents">Documents</option>
+                <option value="general">General</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label class="label" for="upload-notes">Notes</label>
+              <textarea class="textarea" id="upload-notes"></textarea>
+            </div>
+
+            <button class="btn" id="upload-submit" type="submit">Upload file</button>
+          </form>
+        </div>
+
+        <div class="panel">
+          <span class="eyebrow">Recent uploads</span>
+          <ul class="list" id="uploads-list"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Designed to feel calm, clear, and easy to use.</p>
+    </div>
+  </footer>
+
+  <script src="assets/config.js"></script>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

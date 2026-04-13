@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Timeline</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="portal-shell" data-auth-required="true">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-mark.svg" alt="Portal logo" />
+        <span class="brand__label">
+          <span class="brand__eyebrow">Private portal</span>
+          <span class="brand__name">Kramer Creative</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="help.html">Help</a>
+        <a href="login.html">Login</a>
+        <button type="button" class="js-logout">Log out</button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="toast" class="status hidden" style="position:fixed;right:1rem;bottom:1rem;z-index:999;"></div>
+
+  <main class="page">
+    <section class="section">
+      <div class="container grid grid--2">
+        <div class="panel">
+          <span class="eyebrow">Project timeline</span>
+          <h1>What happens next.</h1>
+          <ol class="timeline">
+            <li><strong>Onboarding received</strong><p>Files and basic access are in place.</p></li>
+            <li><strong>Account setup complete</strong><p>Shopify and Printful are ready.</p></li>
+            <li><strong>Design phase</strong><p>The build is underway.</p></li>
+            <li><strong>Review round</strong><p>The client sends notes.</p></li>
+            <li><strong>Refinement</strong><p>Changes are applied.</p></li>
+            <li><strong>Launch</strong><p>The site goes live.</p></li>
+          </ol>
+        </div>
+
+        <div class="panel">
+          <span class="eyebrow">Current status</span>
+          <h2 data-project-name>Your project</h2>
+          <p><strong>Status:</strong> <span data-project-status>Setup in progress</span></p>
+          <p><strong>Target launch:</strong> <span data-launch-date>To be scheduled</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Designed to feel calm, clear, and easy to use.</p>
+    </div>
+  </footer>
+
+  <script src="assets/config.js"></script>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

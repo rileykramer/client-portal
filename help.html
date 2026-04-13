@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Help</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="portal-shell">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-mark.svg" alt="Portal logo" />
+        <span class="brand__label">
+          <span class="brand__eyebrow">Private portal</span>
+          <span class="brand__name">Kramer Creative</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="help.html">Help</a>
+        <a href="login.html">Login</a>
+        <button type="button" class="js-logout">Log out</button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="toast" class="status hidden" style="position:fixed;right:1rem;bottom:1rem;z-index:999;"></div>
+
+  <main class="page">
+    <section class="section">
+      <div class="container center-stack">
+        <div class="panel">
+          <span class="eyebrow">Help</span>
+          <h1>Need help getting in?</h1>
+          <ul class="list">
+            <li><strong>I never got my sign-in email.</strong><p>Check spam or promotions, then try again.</p></li>
+            <li><strong>I clicked the link and nothing happened.</strong><p>Use the newest email link.</p></li>
+            <li><strong>I do not know which email to use.</strong><p>Use the email you gave for your project.</p></li>
+            <li><strong>Where do I upload files?</strong><p>Log in, then open Upload Files.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Designed to feel calm, clear, and easy to use.</p>
+    </div>
+  </footer>
+
+  <script src="assets/config.js"></script>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
