@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Client Portal</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="portal-shell">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-mark.svg" alt="Portal logo" />
+        <span class="brand__label">
+          <span class="brand__eyebrow">Private portal</span>
+          <span class="brand__name">Kramer Creative</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="help.html">Help</a>
+        <a href="login.html">Login</a>
+        <button type="button" class="js-logout">Log out</button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="toast" class="status hidden" style="position:fixed;right:1rem;bottom:1rem;z-index:999;"></div>
+
+  <main class="page">
+    <section class="hero">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Luxury client portal</span>
+          <h1>A simple private space for every client.</h1>
+          <p class="lead">A calm, elegant portal where your clients can log in fast, upload files, follow the timeline, and see exactly what comes next.</p>
+          <div class="actions">
+            <a class="btn" href="login.html">Client login</a>
+            <a class="btn btn--secondary" href="help.html">Need help?</a>
+          </div>
+        </div>
+        <div class="panel">
+          <span class="eyebrow">What clients see</span>
+          <h2>Clear next steps, no tech overwhelm.</h2>
+          <ul class="list">
+            <li><strong>Start here</strong><p>One calm checklist for files, branding, and communication details.</p></li>
+            <li><strong>Set up Shopify</strong><p>Simple step-by-step instructions in plain English.</p></li>
+            <li><strong>Set up Printful</strong><p>Create the account, then hand off the connection work to you.</p></li>
+            <li><strong>Upload files</strong><p>Drop logos, photos, and documents into one safe place.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Designed to feel calm, clear, and easy to use.</p>
+    </div>
+  </footer>
+
+  <script src="assets/config.js"></script>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
